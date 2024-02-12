@@ -1,0 +1,451 @@
+/* common css */
+:root {
+   --primaryFont: "Josefin Sans", sans-serif;
+   --secondFont: "Roboto", sans-serif;
+	--text-color: #11161e;
+	--darkBlue: #151a32;
+	--comon-colot: #fff;
+	--primaryColor: #ff6f61;
+	--paragraph-color: #444;
+	--primary-color-dark: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,span,ol,ul{
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: var(--primaryFont);
+}
+
+/* common button */
+.button{
+    padding: 13px 38px;
+    display: inline-block;
+    background-color: var(--primaryColor);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--comon-colot);
+}
+/* common button End*/
+
+/* Common heading */
+
+.heading {
+    text-align: center;
+}
+.heading h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+}
+/* Common Heading End */
+
+/* common css end */
+
+/* navbar starts */
+
+#navbarMenu ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--text-color);
+    padding: 37px 15px ;
+    display: block;
+}
+#navbarMenu ul li a span:hover > i{
+    transform: rotate(180deg);
+}
+#navbarMenu ul li:hover > a{
+    color: var(--primaryColor);
+}
+#navbarMenu ul li{
+    position: relative;
+}
+#navbarMenu ul li .submenu{
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(212, 203, 203);
+    width: 250px;
+    margin-top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#navbarMenu ul li .submenu li a{
+    padding: 15px 20px;
+    border-bottom: 1px solid grey;
+
+}
+#navbarMenu ul li:hover > .submenu{
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+header nav .links li a{
+color: var(--darkBlue);
+margin-left: 20px;
+font-size: 19px;
+position: relative;
+}
+.cartCounter{
+    position: absolute;
+    top: -3px;
+    right: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
+    color: var(--comon-colot);
+    font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+    background-color: var(--primaryColor);
+}
+/* small navbar */
+.smNavbar{
+    padding: 15px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; ;
+}
+.smNavbar .menuBtnToggoler{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+}
+header .smallMenuLink li:hover > a{
+    color: var(--primaryColor);
+}
+header .smallMenuLink li a{
+    border-bottom: 1px solid #ccc;
+    display: block;
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 15px 20px;
+}
+header .smallMenuLink li:last-child a{
+    border: none;
+}
+header .submenuSmall{
+    position: relative !important;
+    inset: auto !important;
+    transform:translate3d(0px, 0px ,0px) !important;
+    width: 100% ;
+    border-radius: 0;
+    border: 0;
+    padding-left: 20px;
+}
+.smallMenuLink .dropdownArrow{
+    padding-left: 5px;
+}
+.smallMenuLink span:hover > i{
+    transform: rotate(180deg);
+}
+/* small navbar */
+ 
+/* navbar ends */
+
+
+/* Banner section */
+#banner{
+    position: relative;
+}
+#banner .bannerSlider .slide{
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+}
+#banner .bannerSlider .slide .banner-cnt{
+    width: 500px;
+}
+#banner .bannerSlider .slide .banner-cnt h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+    padding-bottom: 14px;
+}
+#banner .bannerSlider .slide .banner-cnt h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+    padding-bottom: 16px;
+}
+#banner .bannerSlider .slide .banner-cnt p{
+    font-family: var(--secondFont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1d1d1d;
+    margin-bottom: 29px;
+}
+#banner .bannerDots{
+display: flex;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 200px;
+}
+.bannerDots li button{
+    width: 11px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: transparent;
+    margin-right: 5.45px;
+    border: none;
+    transition: 0.5s ease;
+}
+.bannerDots li.slick-active button{
+    width: 29px;
+    background-color: var(--primaryColor);
+}
+/* Banner section End*/
+
+
+
+/* Beauty Cream Section */
+
+#beautyCream{
+    margin-top: 84px;
+}
+
+.cream .image{
+    position: relative;
+    margin-bottom: 24px;
+}
+.overlay{
+    width: 496px;
+    height: 260px;
+    background-color:  #11161e67;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 20px ;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.overlay h5{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--comon-colot);
+    padding-bottom: 12px;
+}
+.overlay a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--comon-colot);
+}
+.cream .image:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+.product{
+position: relative;
+
+}
+.overlay-one{
+    width: 660px;
+    height: 524px;
+    background-color:  #11161e67;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 60px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+.product:hover .overlay-one{
+opacity: 1;
+visibility: visible;
+margin-top: 0;
+
+}
+.overlay-one h5{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--comon-colot);
+    padding-bottom: 12px;
+}
+.overlay-one a{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--comon-colot);
+    
+}
+/* Beauty Cream Section End */
+
+/* New product section */
+
+#newProduct{
+    margin-top: 112px;
+}
+.productCnt{
+    margin-top: 24px;
+}
+.productCnt .details{
+    text-align: center;
+    padding: 24px 0 26px 0;
+}
+.productCnt .details h6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    padding-bottom: 5px;
+}
+.productCnt .details h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 11px;
+}
+.productCnt .details a{
+    font-size: 12px;
+    color: var(--primaryColor);
+}
+.product-img .img{
+position: relative;
+}
+.offer h6{
+
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: var(--comon-colot);
+}
+.product-img .img .offer{
+    position: absolute;
+    padding: 0 8px;
+    top: 12px;
+    left: 24px;
+    background-color: var(--primaryColor);
+    color: white;
+    border-radius: 13px 0 0 13px;
+    transform: rotate(-90deg);
+}
+.product-img .img .overlay-product{
+    position: absolute;
+    right: 18px;
+    top: 44px;
+}
+.product-img .img .overlay-product li{
+    transform: translateX(-50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.product-img .img .overlay-product li:nth-child(2){
+transition-delay: 0.15s;
+}
+.product-img .img .overlay-product li:nth-child(3){
+    transition-delay: 0.3s;   
+}
+.product-img .img .overlay-product li:nth-child(4){
+    transition-delay: 0.45s;
+}
+.product-img:hover .img .overlay-product li{
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+}
+.product-img .img .overlay-product a{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    color: #151a32;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+.product-img .img .overlay-product a:hover{
+    background-color: var(--primaryColor);
+    color: white;
+    transition: 0.3s;
+}
+/* New product section End*/
+
+/* Cosmetics section */
+#cosmetics{
+    margin-top: 100px;
+}
+#cosmetics .spaImg{
+    height: 524px;
+}
+#cosmetics .cosmeticsCnt{
+    width: 350px;
+    height: 524px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#cosmetics .cosmeticsCnt h2{
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 128%;
+   color: var(--comon-colot);
+   padding-bottom: 10px;
+}
+#cosmetics .cosmeticsCnt p{
+    font-family: var(--secondFont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--comon-colot);
+    padding-bottom: 30px;
+}
+#cosmetics .cosmeticsCnt a{
+    margin-right: 170px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    padding: 13px 34px;
+    color: var(--comon-colot);
+    border: 2px solid #fff;
+}
+/* Cosmetics Section End */
